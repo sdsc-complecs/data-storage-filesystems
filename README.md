@@ -31,7 +31,7 @@ Last login: Tue Jul 29 09:46:37 2025 from 136.26.86.69
 [etrain110@login01 ~]$
 ```
 
-Change directories to `/` and look around with `ls`.
+`cd` to `/` root directory of the login node and look around with `ls`.
 
 ```
 [etrain110@login01 ~]$ cd /
