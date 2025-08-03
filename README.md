@@ -108,6 +108,8 @@ Use the `tree` command to get a different view of the file system hierarchy.
 `cd` to `$HOME` and look around with `ls`.
 
 ```
+[etrain110@login01 /]$ echo $HOME
+/home/etrain110
 [etrain110@login01 /]$ cd $HOME
 [etrain110@login01 ~]$ ls -lahtr
 total 93K
