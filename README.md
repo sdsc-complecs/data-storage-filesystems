@@ -104,3 +104,28 @@ Use the `tree` command to get a different view of the file system hierarchy.
 25 directories
 [etrain110@login01 /]$
 ```
+
+`cd` to `$HOME` and look around with `ls`.
+
+```
+[etrain110@login01 /]$ cd $HOME
+[etrain110@login01 ~]$ ls -lahtr
+total 93K
+-rw-r--r--    1 etrain110 gue998  141 Aug  2  2022 .bash_profile
+-rw-r--r--    1 etrain110 gue998   18 Aug  2  2022 .bash_logout
+-rw-r--r--    1 etrain110 gue998  658 Sep 29  2022 .zshrc
+-rw-r--r--    1 etrain110 gue998  334 Apr 12  2023 .emacs
+-rw-r--r--    1 etrain110 gue998  172 Aug 25  2023 .kshrc
+-rw-r--r--    1 etrain110 gue998    6 Jun 26 15:36 .ollama_port
+-rw-------    1 etrain110 gue998  106 Jun 30 11:46 .Xauthority
+-rw-------    1 etrain110 gue998 8.3K Jun 30 12:59 .viminfo
+drwxr-xr-x    5 etrain110 gue998    5 Jul 28 18:52 .galyleo
+-rw-r--r--    1 etrain110 gue998 2.7K Jul 28 19:04 .bashrc
+lrwxrwxrwx    1 etrain110 gue998   34 Jul 28 19:17 data -> /cm/shared/examples/sdsc/ciml/2025
+drwxr-x---    5 etrain110 gue998   16 Jul 29 09:28 .
+drwxr-xr-x    3 etrain110 gue998    3 Jul 29 09:28 .ood_portal
+drwx------    2 etrain110 gue998    4 Jul 29 09:45 .ssh
+-rw-------    1 etrain110 gue998  15K Jul 29 09:53 .bash_history
+drwxr-xr-x 4449 root      root      0 Aug  3 13:30 ..
+[etrain110@login01 ~]$
+```
