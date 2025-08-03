@@ -69,3 +69,38 @@ drwxrwxrwt  335 root root  92K Aug  3 13:33 tmp
 drwxr-xr-x   38 root root 1.3K Aug  3 13:33 run
 [etrain110@login01 /]$
 ```
+
+Use the `tree` command to get a different view of the file system hierarchy.
+
+```
+[etrain110@login01 /]$ tree -L 1 -d
+.
+├── bin -> usr/bin
+├── boot
+├── cm
+├── cvmfs
+├── dev
+├── etc
+├── expanse
+├── home
+├── lib -> usr/lib
+├── lib64 -> usr/lib64
+├── lost+found
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin -> usr/sbin
+├── scratch
+├── srv
+├── sys
+├── tftpboot
+├── tmp
+├── usr
+└── var
+
+25 directories
+[etrain110@login01 /]$
+```
