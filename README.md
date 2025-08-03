@@ -248,3 +248,13 @@ Disk quotas for usr etrain110 (uid 509402):
                    333k      0k  9.537T       -       6       0 2000000       -
 [etrain110@login01 ~]$
 ```
+
+```
+[etrain110@login01 ~]$ lfs quota -g gue998 -h /expanse/lustre/projects/gue998/$USER
+Disk quotas for grp gue998 (gid 998):
+     Filesystem    used   quota   limit   grace   files   quota   limit   grace
+/expanse/lustre/projects/gue998/etrain110
+                 20.81M      0k     50T       -     382       0       0       -
+gid 998 is using default file quota setting
+[etrain110@login01 ~]$
+```
