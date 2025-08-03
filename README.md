@@ -194,7 +194,7 @@ drwxr-xr-x 4449 root      root      0 Aug  3 13:30 ..
 [etrain110@login01 ~]$
 ```
 
-Check how much memory is available on the login node.
+Check how much `free` memory is available on the login node.
 
 ```
 [etrain110@login01 ~]$ free -h
@@ -202,4 +202,38 @@ Check how much memory is available on the login node.
 Mem:          124Gi        59Gi        12Gi       124Mi        52Gi        63Gi
 Swap:          11Gi       9.5Gi       2.5Gi
 [etrain110@login01 ~]$
+```
+
+How much is available on Expanse's GPU nodes?
+
+```
+[etrain110@login01 ~]$ srun --account=gue998 --partition=gpu-debug --nodes=1 --ntasks-per-node=1 --cpus-per-task=10 --mem=92G --gpus=1 --time=00:30:00 --pty --wait=0 /bin/bash
+srun: job 41722252 queued and waiting for resources
+srun: job 41722252 has been allocated resources
+[etrain110@exp-7-59 ~]$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          376Gi       4.3Gi       280Gi       122Mi        91Gi       369Gi
+Swap:            0B          0B          0B
+[etrain110@exp-7-59 ~]$ nvidia-smi
+Sun Aug  3 14:16:32 2025       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.85.12    Driver Version: 525.85.12    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+| N/A   33C    P0    41W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+[etrain110@exp-7-59 ~]$
 ```
