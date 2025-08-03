@@ -237,3 +237,14 @@ Sun Aug  3 14:16:32 2025
 +-----------------------------------------------------------------------------+
 [etrain110@exp-7-59 ~]$
 ```
+
+Use the `lfs` command to check your `/expanse/lustre` quotas.
+
+```
+[etrain110@login01 ~]$ lfs quota -u $USER -h /expanse/lustre/scratch/$USER/temp_project/
+Disk quotas for usr etrain110 (uid 509402):
+     Filesystem    used   quota   limit   grace   files   quota   limit   grace
+/expanse/lustre/scratch/etrain110/temp_project/
+                   333k      0k  9.537T       -       6       0 2000000       -
+[etrain110@login01 ~]$
+```
