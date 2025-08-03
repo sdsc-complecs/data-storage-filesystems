@@ -131,3 +131,30 @@ drwx------    2 etrain110 gue998    4 Jul 29 09:45 .ssh
 drwxr-xr-x 4449 root      root      0 Aug  3 13:30 ..
 [etrain110@login01 ~]$
 ```
+
+Use the `df` command to look at the different filesystems available on Expanse. We'll truncate the output with the `head` command.
+
+```
+[etrain110@login01 ~]$ df -Th | head -n 20
+Filesystem                                              Type      Size  Used Avail Use% Mounted on
+devtmpfs                                                devtmpfs   63G     0   63G   0% /dev
+tmpfs                                                   tmpfs      63G  7.7M   63G   1% /run
+/dev/sda2                                               ext4       32G   24G  6.5G  79% /
+tmpfs                                                   tmpfs      63G   90M   63G   1% /dev/shm
+tmpfs                                                   tmpfs      63G     0   63G   0% /sys/fs/cgroup
+/dev/sda4                                               ext4       32G  3.7G   26G  13% /tmp
+/dev/sda1                                               vfat      100M     0  100M   0% /boot/efi
+/dev/sdb1                                               ext4      879G   44K  834G   1% /scratch
+10.22.100.111:/pool1/home                               nfs       213T   25T  189T  12% /expanse/nfs/home1
+master:/home                                            nfs       140G   87G   54G  63% /expanse/nfs/mgr1/home
+ps-071.sdsc.edu:/ps-data/community-sw                   nfs       1.0T  324G  701G  32% /expanse/community
+10.22.101.201:/cw3e                                     nfs       171T  1.0M  171T   1% /expanse/nfs/cw3e
+10.22.100.114:/pool4/home                               nfs       210T   26T  184T  13% /expanse/nfs/home4
+10.22.100.113:/pool3/home                               nfs       201T   27T  175T  14% /expanse/nfs/home3
+10.22.100.112:/pool2/home                               nfs       211T   31T  181T  15% /expanse/nfs/home2
+10.21.0.21:6789,10.21.11.7:6789,10.21.11.8:6789:/       ceph      1.6T  1.3T  359G  78% /cm/shared
+10.22.101.123@o2ib:10.22.101.124@o2ib:/expanse/scratch  lustre     11P  9.9P  975T  92% /expanse/lustre/scratch
+tmpfs                                                   tmpfs      13G     0   13G   0% /run/user/0
+10.22.100.114:/pool4/home/lddmm                         nfs       210T   26T  184T  13% /home/lddmm
+[etrain110@login01 ~]$
+```
