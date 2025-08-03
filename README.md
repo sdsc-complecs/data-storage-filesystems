@@ -193,3 +193,13 @@ drwxr-xr-x 4449 root      root      0 Aug  3 13:30 ..
 5.0G	/home/etrain110
 [etrain110@login01 ~]$
 ```
+
+Check how much memory is available on the login node.
+
+```
+[etrain110@login01 ~]$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          124Gi        59Gi        12Gi       124Mi        52Gi        63Gi
+Swap:          11Gi       9.5Gi       2.5Gi
+[etrain110@login01 ~]$
+```
