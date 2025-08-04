@@ -2,7 +2,7 @@
 
 ## Presentation Slides
 
-- [COMPLECS: Data Management 2: Data Transfer](https://drive.google.com/file/d/1_ei6bviMbbpIYPJzQ8duovbF0EuE1o33/view?usp=drive_link)
+- [COMPLECS: Data Management 1: Data Storage and File Systems](https://drive.google.com/file/d/1cs7Cvvcb_InfLvNWD0KdXI-q-cMZWp6N/view?usp=drive_link)
 
 ## Tutorials
 
