@@ -14,7 +14,6 @@
 
 ## Additional References
 
-- https://github.com/sdsc/sdsc-summer-institute-2023/blob/main/3.2_data_management/tutorials/DOWNLOADING.md
 - https://github.com/sdsc/sdsc-summer-institute-2023/blob/main/3.2_data_management/tutorials/FILESYSTEMS.md
 
 ## About COMPLECS
